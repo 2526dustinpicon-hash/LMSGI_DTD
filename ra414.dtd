@@ -1,0 +1,17 @@
+<!ELEMENT joc (titol,companyia,plataforma,anyLlançament,modesJoc,personatges,regions)>
+<!ELEMENT modesJoc (mode+)>
+<!ELEMENT personatges (personatge+)>
+<!ELEMENT regions (regio+)>
+<!ELEMENT personatge (nom)>
+<!ELEMENT regio (nom,nota?)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT companyia (#PCDATA)>
+<!ELEMENT plataforma (#PCDATA)>
+<!ELEMENT anyLlançament (#PCDATA)>
+<!ELEMENT mode (#PCDATA)>
+<!ATTLIST mode principal (si|no) "no">
+<!ATTLIST personatge tipus CDATA #REQUIRED>
+<!ATTLIST personatge jugable (si|no) "no">
+<!ATTLIST regio clima CDATA #REQUIRED>

@@ -1,0 +1,8 @@
+<!ELEMENT joc (titol,companyia,plataforma,anyLlançament,personatges,nivells)>
+<!ELEMENT personatges (personatge+)>
+<!ELEMENT nivells (nivell+)>
+<!ELEMENT personatge (nom)>
+<!ELEMENT nivell (nom)>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST personatge tipus CDATA #REQUIRED>
+<!ATTLIST nivell dificultad CDATA #REQUIRED>

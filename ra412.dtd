@@ -1,0 +1,5 @@
+<!ELEMENT joc (titol,companyia,plataforma,anyLlançament,personatges)>
+<!ELEMENT personatges (personatge+)>
+<!ELEMENT personatge (nom,rol)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT rol (#PCDATA)>

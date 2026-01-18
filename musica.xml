@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg_musica SYSTEM "musica.dtd">
+
+<cataleg_musica>
+    <llista_artistes>
+        <artista id="a1">
+            <nom>Artista1</nom>
+        </artista>
+        <artista id="a2">
+            <nom>Artista2</nom>
+            <pais>Espanya</pais>
+        </artista>
+        <artista id="a3">
+            <nom>Artista2</nom>
+            <pais>España</pais>
+            <genere>Rock</genere>
+        </artista>
+    </llista_artistes>
+    <llista_albumes>
+        <album id="b1">
+            <titol>Primer Disc</titol>
+            <any>2001</any>
+            <artistes>
+                <artista_ref ref="a1"/>
+            </artistes>
+        </album>
+        <album id="b2">
+            <titol>Segon Disc</titol>
+            <any>2005</any>
+            <artistes>
+                <artista_ref ref="a2"/>
+            </artistes>
+        </album>
+        <album id="b3">
+            <titol>Tercer Disc</titol>
+            <any>2010</any>
+            <artistes>
+                <artista_ref ref="a3"/>
+            </artistes>
+        </album>
+    </llista_albumes>
+    <llista_recomanacions_albumes>
+        <recomanacio ref="b1"/>
+        <recomanacio ref="b2"/>
+        <recomanacio ref="b3"/>
+    </llista_recomanacions_albumes>
+</cataleg_musica>
