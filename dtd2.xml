@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "dtd2.dtd">
+
+<cataleg>
+    <llista_actors>
+        <actor id="A1">
+            <nom>Juan</nom>
+            <edat>40</edat>
+        </actor>
+        <actor id="A2">
+            <nom>Carlos</nom>
+            <edat>50</edat>
+        </actor>
+        <actor id="A3">
+            <nom>Roberto</nom>
+            <edat>60</edat>
+        </actor>
+    </llista_actors>
+    <llista_pelicules>
+        <pelicula id="B1">
+            <titol idioma="EN">Titanic</titol>
+            <director>James Cameron</director>
+            <any>1997</any>
+            <actors>
+                <actor_ref ref="A1"/>
+                <actor_ref ref="A2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="B2">
+            <titol idioma="EN">Transformers</titol>
+            <director>Michael Bay</director>
+            <any>2007</any>
+            <actors>
+                <actor_ref ref="A1"/>
+            </actors>
+        </pelicula>
+        <pelicula id="B3">
+            <titol idioma="EN">Fight Club</titol>
+            <director>David Fincher</director>
+            <any>1999</any>
+            <actors>
+                <actor_ref ref="A3"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="B1"/>
+        <recomanacio ref="B2"/>
+        <recomanacio ref="B3"/>
+    </llista_recomanacions_pelicules>
+</cataleg>
